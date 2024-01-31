@@ -1,0 +1,48 @@
+const languageList = {
+  "en-US": {
+    logout: "Logout",
+    gptSearch: "GPT Search",
+    home: "Home",
+    play: "Play",
+    moreInfo: "More Info",
+    nowPlaying: "Now playing",
+    topRated: "Top rated",
+    popular: "Popular",
+    upComing: "Upcoming",
+  },
+  "ru-RU": {
+    logout: "выйти",
+    gptSearch: "GPT-поиск",
+    home: "Дом",
+    play: "Играть",
+    moreInfo: "Больше информации",
+    nowPlaying: "Сейчас играет",
+    topRated: "Самые популярные",
+    popular: "Популярный",
+    upComing: "Предстоящие",
+  },
+  "ja-JP": {
+    logout: "ログアウト",
+    gptSearch: "GPT 検索",
+    home: "家",
+    play: "遊ぶ",
+    moreInfo: "より詳しい情報",
+    nowPlaying: "再生中",
+    topRated: "トップレート",
+    popular: "人気のある",
+    upComing: "今後の予定",
+  },
+  "zh-CN": {
+    logout: "登出",
+    gptSearch: "GPT 搜索",
+    home: "家",
+    play: "玩",
+    moreInfo: "更多信息",
+    nowPlaying: "正在播放",
+    topRated: "评价最高",
+    popular: "受欢迎的",
+    upComing: "即将推出",
+  },
+};
+
+export default languageList;
