@@ -9,6 +9,8 @@ const languageList = {
     topRated: "Top rated",
     popular: "Popular",
     upComing: "Upcoming",
+    placeHolder: "What would you like to watch today ?",
+    search: "Search",
   },
   "ru-RU": {
     logout: "выйти",
@@ -20,6 +22,8 @@ const languageList = {
     topRated: "Самые популярные",
     popular: "Популярный",
     upComing: "Предстоящие",
+    placeHolder: "Что бы вы хотели посмотреть сегодня?",
+    search: "поиск",
   },
   "ja-JP": {
     logout: "ログアウト",
@@ -31,6 +35,8 @@ const languageList = {
     topRated: "トップレート",
     popular: "人気のある",
     upComing: "今後の予定",
+    placeHolder: "今日は何を見たいですか？",
+    search: "検索",
   },
   "zh-CN": {
     logout: "登出",
@@ -42,6 +48,8 @@ const languageList = {
     topRated: "评价最高",
     popular: "受欢迎的",
     upComing: "即将推出",
+    placeHolder: "今天你想看什么？",
+    search: "搜索",
   },
 };
 

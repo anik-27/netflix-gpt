@@ -22,4 +22,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "ja-JP", value: "Japenese" },
 ];
 
-export const GPT_KEY = "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";
+export const GPT_KEY = "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";

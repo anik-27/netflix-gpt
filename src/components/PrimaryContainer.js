@@ -7,7 +7,19 @@ const PrimaryContainer = () => {
   const movies = useSelector((store) => store.movies.nowPlayingMovies);
   if (!movies) return;
 
-  const mainMovie = movies[0];
+  // console.log(movies);
+
+  const filterMainMovie = () => {
+    let smallestOverview = movies[0];
+    movies.map((movie) => {
+      if (movie.overview.length <= smallestOverview.overview.length) {
+        smallestOverview = movie;
+      }
+    });
+    return smallestOverview;
+  };
+
+  const mainMovie = filterMainMovie();
   const { overview, title, id } = mainMovie;
 
   return (
