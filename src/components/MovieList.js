@@ -7,9 +7,14 @@ const MovieList = ({ title, movies }) => {
       <h1 className="py-4 text-white text-3xl">{title}</h1>
       <div className="flex overflow-x-scroll no-scrollbar">
         <div className="flex ">
-          {movies?.map((movie) => (
-            <MovieCard key={movie.id} posterPath={movie.poster_path} />
-          ))}
+          {movies?.map((movie) => {
+            if (!movie.poster_path) return null;
+            else {
+              return (
+                <MovieCard key={movie.id} posterPath={movie.poster_path} />
+              );
+            }
+          })}
         </div>
       </div>
     </div>

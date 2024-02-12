@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 const useAddPopularMovies = () => {
   const appLanguage = useSelector((store) => store.config.appLanguage);
+
   const dispatch = useDispatch();
   const getPopularMovies = async () => {
     try {
@@ -14,6 +15,7 @@ const useAddPopularMovies = () => {
       );
       const json = await data.json();
       dispatch(addPopularMovies(json.results));
+      console.log("hiii");
     } catch (error) {
       console.log(error);
     }

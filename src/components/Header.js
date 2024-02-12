@@ -66,7 +66,7 @@ const Header = ({ isSignInPage }) => {
         className=" cursor-pointer w-44 mx-auto md:mx-0"
       />
       {!isSignInPage && (
-        <div className="flex">
+        <div className="flex p-2 justify-between">
           <select
             className="my-4 mx-3 cursor-pointer h-12 bg-black text-white font-bold py-2 px-4 rounded-lg"
             onChange={(e) => handleLanguageChange(e)}
@@ -77,7 +77,7 @@ const Header = ({ isSignInPage }) => {
               </option>
             ))}
           </select>
-          <div>
+          <div className="hidden md:block ">
             <img
               src={USER_LOGO}
               alt="user-logo"

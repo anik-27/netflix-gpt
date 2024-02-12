@@ -8,8 +8,7 @@ export const API_OPTION = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzlmNmE0ZDU4MTA5NTYwN2ExZGE3YjYyNDM0MjYxMiIsInN1YiI6IjY1YTZkMjM1YjBjZDIwMDEyMjhlMDMwYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.fgk2yq-VDN8phsq3hM2km5koy1Bs6Bdl5_Tjtdw5fq4",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -22,4 +21,7 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "ja-JP", value: "Japenese" },
 ];
 
-export const GPT_KEY = "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";
+export const GPT_KEY = process.env.REACT_APP_GPT_KEY;
+// console.log(process);
+
+// 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

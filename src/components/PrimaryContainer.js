@@ -19,8 +19,9 @@ const PrimaryContainer = () => {
     return smallestOverview;
   };
 
-  const mainMovie = filterMainMovie();
+  const mainMovie = movies[4];
   const { overview, title, id } = mainMovie;
+  // console.log(mainMovie);
 
   return (
     <div className="pt-[30%] bg-black md:pt-0">

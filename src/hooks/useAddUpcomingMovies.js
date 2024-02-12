@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const useAddUpComingMovies = () => {
   const dispatch = useDispatch();
   const appLanguage = useSelector((store) => store.config.appLanguage);
+
   const getUpcomingMovies = async () => {
     try {
       const data = await fetch(
