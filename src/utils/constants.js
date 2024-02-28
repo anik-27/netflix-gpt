@@ -1,5 +1,5 @@
 export const NETFLIX_LOGO =
-  "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
+  "https://fontmeme.com/permalink/240222/bcdb91e51f3c28e0157e790186fff21d.png";
 export const USER_LOGO =
   "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png";
 export const BACKGROUND_IMAGE =
@@ -23,5 +23,3 @@ export const SUPPORTED_LANGUAGES = [
 
 export const GPT_KEY = process.env.REACT_APP_GPT_KEY;
 // console.log(process);
-
-// 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

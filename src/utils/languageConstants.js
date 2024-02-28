@@ -11,6 +11,20 @@ const languageList = {
     upComing: "Upcoming",
     placeHolder: "What would you like to watch today ?",
     search: "Search",
+    trailerMovie: "Schindler's List",
+    trailerOverview:
+      "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+    loading: "Loading",
+    errorPage: {
+      error: "Your search did not find any matches.",
+      title: "Suggestions: ",
+      suggestions: [
+        "Looking for a movie ?",
+        "Try different keywords.",
+        "Try a genre such as comedy, romance or drama.",
+        "Try using a title, an actor or director",
+      ],
+    },
   },
   "ru-RU": {
     logout: "выйти",
@@ -24,6 +38,20 @@ const languageList = {
     upComing: "Предстоящие",
     placeHolder: "Что бы вы хотели посмотреть сегодня?",
     search: "поиск",
+    trailerMovie: "Список Шиндлера",
+    trailerOverview:
+      "Правдивая история о том, как бизнесмен Оскар Шиндлер спас более тысячи жизней евреев от нацистов, когда они работали рабами на его фабрике во время Второй ",
+    loading: "Загрузка",
+    errorPage: {
+      error: "Ваш поиск не нашел совпадений.",
+      title: "Предложения: ",
+      suggestions: [
+        "Ищу фильм ?",
+        "Попробуйте разные ключевые слова.",
+        "Попробуйте жанр, например комедию, мелодраму или драму.",
+        "Попробуйте использовать название, актера или режиссера.",
+      ],
+    },
   },
   "ja-JP": {
     logout: "ログアウト",
@@ -37,6 +65,20 @@ const languageList = {
     upComing: "今後の予定",
     placeHolder: "今日は何を見たいですか？",
     search: "検索",
+    trailerMovie: "シンドラーのリスト",
+    trailerOverview:
+      "第二次世界大戦中、実業家オスカー シンドラーが工場で奴隷として働いていた千人以上のユダヤ人の命をナチスから救った実話。",
+    loading: "読み込み中",
+    errorPage: {
+      error: "検索では一致するものが見つかりませんでした.",
+      title: "提案: ",
+      suggestions: [
+        "映画を探しています ?",
+        "別のキーワードを試してください.",
+        "コメディ、ロマンス、ドラマなどのジャンルを試してください.",
+        "タイトル、俳優、監督を使用してみてください",
+      ],
+    },
   },
   "zh-CN": {
     logout: "登出",
@@ -50,6 +92,20 @@ const languageList = {
     upComing: "即将推出",
     placeHolder: "今天你想看什么？",
     search: "搜索",
+    trailerMovie: "辛德勒的名单",
+    trailerOverview:
+      "讲述了二战期间商人奥斯卡·辛德勒 (Oskar Schindler) 在他的工厂里当奴隶时如何从纳粹手中拯救了一千多名犹太人的生命的真实故事。",
+    loading: "加载中",
+    errorPage: {
+      error: "您的搜索没有找到任何匹配项.",
+      title: "建议: ",
+      suggestions: [
+        "寻找电影 ?",
+        "尝试不同的关键词.",
+        "尝试喜剧、爱情或戏剧等类型.",
+        "尝试使用标题、演员或导演",
+      ],
+    },
   },
 };
 

@@ -67,16 +67,19 @@ const Header = ({ isSignInPage }) => {
       />
       {!isSignInPage && (
         <div className="flex p-2 justify-between">
-          <select
-            className="my-4 mx-3 cursor-pointer h-12 bg-black text-white font-bold py-2 px-4 rounded-lg"
-            onChange={(e) => handleLanguageChange(e)}
-          >
-            {SUPPORTED_LANGUAGES.map((language) => (
-              <option key={language.identifier} value={language.identifier}>
-                {language.value}
-              </option>
-            ))}
-          </select>
+          {!showGptBar && (
+            <select
+              className="my-4 mx-3 cursor-pointer h-12 bg-black text-white font-bold py-2 px-4 rounded-lg"
+              onChange={(e) => handleLanguageChange(e)}
+              value={appLanguage}
+            >
+              {SUPPORTED_LANGUAGES.map((language) => (
+                <option key={language.identifier} value={language.identifier}>
+                  {language.value}
+                </option>
+              ))}
+            </select>
+          )}
           <div className="hidden md:block ">
             <img
               src={USER_LOGO}

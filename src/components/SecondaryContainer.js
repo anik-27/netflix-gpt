@@ -8,8 +8,8 @@ export const SecondaryContainer = () => {
   const appLanguage = useSelector((store) => store.config.appLanguage);
   return (
     movies && (
-      <div className="bg-black ">
-        <div className="mt-0 md:-mt-52 pl-4 md:pl-12 relative z-20">
+      <div className="bg-black">
+        <div className="mt-0 md:-mt-52 pl-4 md:pl-10 relative z-20 pb-8">
           <MovieList
             title={languageList[appLanguage].nowPlaying}
             movies={movies.nowPlayingMovies}

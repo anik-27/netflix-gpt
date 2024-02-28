@@ -34,6 +34,9 @@ const Login = () => {
 
   const toggleSignInForm = () => {
     setIsSignInform(!isSignInForm);
+    email.current.value = "";
+    password.current.value = "";
+    setErrorMessages({ name: null, email: null, password: null });
   };
 
   const setDisplayName = (user, name) => {
@@ -49,7 +52,7 @@ const Login = () => {
         setDisplayName(userCredential.user, name).then(() => {
           const { displayName, email, uid } = auth.currentUser;
           dispatch(addUser({ displayName, email, uid }));
-          // navigate("/browse");
+          // navigate("/");
         });
       })
       .catch((error) => {
@@ -108,9 +111,9 @@ const Login = () => {
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-full sm:w-6/12 md:w-4/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+        className=" w-full sm:w-6/12 md:w-4/12 absolute px-12 py-8 bg-black my-28 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
       >
-        <h1 className="font-bold text-3xl py-4">
+        <h1 className="font-bold text-3xl py-3">
           {isSignInForm ? "Sign In" : "Sign up"}
         </h1>
         {!isSignInForm && (
@@ -121,7 +124,9 @@ const Login = () => {
               placeholder="Name"
               className="p-4 my-4 w-full bg-gray-700 rounded-md"
             />
-            {errorMessages.name && <p>{errorMessages.name}</p>}
+            {errorMessages.name && (
+              <p className="text-red-700">{errorMessages.name}</p>
+            )}
           </>
         )}
         <input
@@ -130,21 +135,25 @@ const Login = () => {
           placeholder="Email or phone number"
           className="p-4 my-4 w-full bg-gray-700 rounded-md"
         />
-        {errorMessages.email && <p>{errorMessages.email}</p>}
+        {errorMessages.email && (
+          <p className="text-red-700">{errorMessages.email}</p>
+        )}
         <input
           ref={password}
           type="password"
           placeholder="Password"
           className="p-4 my-4 w-full bg-gray-700 rounded-md"
         />
-        {errorMessages.password && <p>{errorMessages.password}</p>}
+        {errorMessages.password && (
+          <p className="text-red-700">{errorMessages.password}</p>
+        )}
         <button
           onClick={handleButtonClick}
           className="p-4 my-6 bg-red-700 w-full rounded-md"
         >
           {isSignInForm ? "Sign In" : "Sign up"}
         </button>
-        <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
+        <p className="py-3 cursor-pointer" onClick={toggleSignInForm}>
           {isSignInForm
             ? "New to Netflix ? Sign up now."
             : "Already a member ? Sign In"}
