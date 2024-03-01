@@ -105,7 +105,7 @@ const Login = () => {
         <img
           src={BACKGROUND_IMAGE}
           alt="background-img"
-          className="min-h-screen fixed h-screen w-screen object-cover"
+          className="min-h-screen fixed h-screen w-screen object-cover  "
         />
       </div>
 
